@@ -58,7 +58,7 @@ class FileCopyTool:
 
         button_frame = tk.Frame(self.root)
         button_frame.pack(pady=(0, 10))
-        self.cancel_button = tk.Button(button_frame, text="Cancel Scan", command=self.cancel_scan_confirm)
+        self.cancel_button = tk.Button(button_frame, text="Cancel Scan", command=self.cancel_scan_confirm, bg="red", fg="white")
         self.cancel_button.pack()
         self.cancel_button.config(state=tk.DISABLED)
 
