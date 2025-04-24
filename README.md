@@ -1,33 +1,43 @@
-# 📂 Drive Scanner & Photo Copier GUI
+# 🧰 Data Recovery Tool by Neverklear Technologies
 
-This Python-based GUI tool allows users to scan an entire drive for image and document files (e.g., `.jpg`, `.png`, `.pdf`, `.tiff`, etc.), then copy those files to a destination folder while preserving the original folder structure.
+A comprehensive and technician-friendly Windows utility for recovering user data from internal and external drives. Designed to assist IT professionals, this tool scans deeply and preserves folder structures while supporting a variety of data types.
 
 ---
 
 ## ✅ Features
 
-- 🔍 Scan entire drive (including hidden folders and subdirectories)
-- 🖼️ Supports multiple image and document formats:
-  - `.jpeg`, `.jpg`, `.png`, `.gif`, `.tiff`, `.bmp`, `.webp`, `.heic`, `.pdf`, `.raw`, etc.
-- 📁 Maintains original folder structure
-- 🚫 Set minimum file size filter (in KB)
-- 🧭 Real-time progress bar and log output
-- ❌ Cancel button to safely stop scanning mid-process
-- 🖥️ Built-in GUI using Python `tkinter`
+- 🔍 **Deep Drive Scanning**
+  - Recursively searches all directories
+  - Supports internal, external, and USB drives
+  - Maintains original folder structure
+
+- 📁 **Copy Modes**
+  - **Copy Photos**: `.jpg`, `.png`, `.heic`, `.raw`, `.pdf`, and more
+  - **Copy Documents**: `.doc`, `.docx`, `.xls`, `.pdf`, `.txt`, etc.
+  - **Copy Music**: `.mp3`, `.wav`, `.flac`, `.aac`, etc.
+  - **Copy Videos**: `.mp4`, `.avi`, `.mov`, `.mkv`, etc.
+  - **Copy QuickBooks Files**: `.qbw`, `.qbb`, `.qbm`, `.nd`, `.tlg`, and many others
+  - **Copy User Data**: Copies entire contents of the `Users` folder (e.g., `C:\Users`)
+
+- 📊 **Smart File Copying**
+  - File size filter to skip small or temporary files
+  - Skips files that can’t be accessed (logs them instead)
+  - Auto-scroll live log view with real-time status
+
+- 🔴 **Cancel with Confirmation**
+  - Stop any scan/copy operation safely mid-process
+
+- 📁 **Logging**
+  - Detailed output in GUI
+  - Errors written to `logfile.txt` for review
 
 ---
 
-## 🖥️ Requirements
+## 🖥️ How to Run
 
-- Python 3.8+
-- No additional packages needed — uses only standard libraries (`tkinter`, `os`, `shutil`, etc.)
-
----
-
-## ▶️ How to Run
-
-1. Clone this repository or download the ZIP
-2. Open a terminal and run:
-
-```bash
-python photo_copier_gui.py
+### Option 1: Run with Python (Windows)
+1. Install Python 3.9+ from [python.org](https://www.python.org/)
+2. Clone or download the repository:
+   ```bash
+   git clone https://github.com/your-username/data-recovery-tool.git
+   cd data-recovery-tool
